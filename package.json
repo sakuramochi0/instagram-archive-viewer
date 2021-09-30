@@ -6,7 +6,7 @@
   },
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy --output docs/",
+    "build": "eleventy",
     "test": "echo \"Warning: no test specified\""
   },
   "husky": {
@@ -24,7 +24,7 @@
     ]
   },
   "dependencies": {
-    "@11ty/eleventy": "0.11.1",
+    "@11ty/eleventy": "0.12.1",
     "commander": "6.2.0",
     "date-fns": "2.16.1",
     "debug": "^4.2.0",
