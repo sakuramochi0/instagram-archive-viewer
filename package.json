@@ -6,7 +6,7 @@
   },
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy",
+    "build": "eleventy --output docs/",
     "test": "echo \"Warning: no test specified\""
   },
   "husky": {
