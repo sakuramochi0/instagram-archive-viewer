@@ -3,7 +3,7 @@
 [![Repository CI Status](https://github.com/nickcolley/instagram-archive-viewer/workflows/ci/badge.svg)](https://github.com/nickcolley/instagram-archive-viewer/actions?query=workflow%3Aci)
 [![npm version](https://img.shields.io/npm/v/instagram-archive-viewer.svg?style=flat)](https://www.npmjs.com/package/instagram-archive-viewer)
 
-![](readme-screenshot-3.png)
+![Screenshot of the home page](screenshot.png)
 
 View your main instagram feed and stories to a local website from your data download archive.
 
