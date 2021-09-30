@@ -11,3 +11,6 @@ _site/
 src/_data/**/*
 !src/_data/README.md
 !src/_data/*.js
+
+# Prevent zip archive file containing private information
+*.zip
