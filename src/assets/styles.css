@@ -202,3 +202,27 @@ nav a:not([aria-current="page"]) {
 .profile p {
   margin: 0;
 }
+
+#picture-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+#picture-box img {
+  max-height: 90vh;
+  padding: 1rem;
+}
+
+#picture-box figcaption {
+  max-width: 90vw;
+}
