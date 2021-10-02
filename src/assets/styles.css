@@ -23,7 +23,6 @@ html {
   background: #fafafa;
   color: #262626;
   font-size: 1.3rem;
-  text-transform: lowercase;
 }
 
 html,
@@ -139,6 +138,7 @@ nav a {
   top: calc(-1 * var(--border-width));
   border-top: calc(var(--border-width) * 2) solid var(--primary);
   display: inline-flex;
+  align-items: center;
   gap: 0.3rem;
   padding: 0.8rem 0.5rem;
   text-decoration: none;
