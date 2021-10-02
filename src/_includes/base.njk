@@ -27,7 +27,7 @@
       <div class="profile">
           <img src="/{{ account.img }}" alt="" />
           <div>
-              <span class="account-name">{{ account.username }}</span>
+              <span class="account-name">@{{ account.username }}</span>
               <p>Joined <strong>{{ account.dateJoined }}</strong></p>
           </div>
       </div>
@@ -52,7 +52,6 @@
     </nav>
 
     <main id="main">
-      <h2>{{ title }}</h2>
       {{ content | safe }}
     </main>
   </body>

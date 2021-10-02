@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: rgba(255, 20, 102, 0.63);
+}
+
 html {
   -webkit-tap-highlight-color: transparent;
   font-family: Barlow, -apple-system, HelveticaNeue, Helvetica, Arial,
@@ -29,19 +33,24 @@ body {
 }
 
 body {
-  padding: 1rem;
+  padding: 0.5rem;
   max-width: 1400px;
   margin: 0 auto;
 }
+
 @media (min-width: 700px) {
   body {
     padding: 4rem;
   }
 }
 
+header {
+  padding: 1rem 1rem 0 1rem;
+}
+
 :link,
 :visited {
-  color: #3636e8;
+  color: #262626;
 }
 
 :focus {
@@ -90,6 +99,7 @@ body {
   margin-top: 0;
   margin-bottom: 2.25rem;
   font-variation-settings: "wght" 160, "wdth" 500;
+  color: var(--primary);
 }
 
 .title,
@@ -116,6 +126,7 @@ video {
 nav {
   --border-width: 0.1rem;
   border-top: var(--border-width) solid #ddd;
+  margin-bottom: 1rem;
 }
 
 .nav-container {
@@ -126,7 +137,7 @@ nav {
 nav a {
   position: relative;
   top: calc(-1 * var(--border-width));
-  border-top: var(--border-width) solid;
+  border-top: calc(var(--border-width) * 2) solid var(--primary);
   display: inline-flex;
   gap: 0.3rem;
   padding: 0.8rem 0.5rem;
@@ -165,23 +176,19 @@ nav a:not([aria-current="page"]) {
 
 .feed {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-@media (min-width: 500px) {
+
+@media (max-width: 500px) {
   .feed {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 800px) {
-  .feed {
-    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
   }
 }
 
 .profile {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
   margin-bottom: 2rem;
 }
@@ -194,9 +201,8 @@ nav a:not([aria-current="page"]) {
 }
 .profile .account-name {
   display: inline-block;
-  margin: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
 }
 
 .profile p {
