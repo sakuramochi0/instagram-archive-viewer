@@ -7,10 +7,10 @@ layout: base.njk
         <a class="aspect-ratio" href="/{{ post.path }}">
             <div class="aspect-ratio-inside">
                 {% if post.type === 'photo' %}
-                    <img src="/{{ post.path }}" alt="{% if post.caption %}{{ post.caption }}. {% endif %}Date: {{ post.formattedDate }}." loading="lazy" />
+                    <img src="/{{ post.path }}" alt="{% if post.caption %}{{ post.caption }} {% endif %}({{ post.formattedDate }})" loading="lazy" />
                 {% endif %}
                 {% if post.type === 'video' %}
-                    <video src="/{{ post.path }}" controls loop aria-label="{% if post.caption %}{{ post.caption }}. {% endif %}Date: {{ post.formattedDate }}." loading="lazy"></video>
+                    <video src="/{{ post.path }}" controls loop aria-label="{% if post.caption %}{{ post.caption }} {% endif %}({{ post.formattedDate }})" loading="lazy"></video>
                 {% endif %}
             </div>
         </a>
