@@ -19,7 +19,7 @@ module.exports = function () {
       .map((story) => {
         const date = new Date(story.taken_at);
         story.date = date;
-        story.formattedDate = format(date, "Mo MMMM Y");
+        story.formattedDate = format(date, "yyyy-MM-dd");
         return story;
       })
       // Check file exists to show.

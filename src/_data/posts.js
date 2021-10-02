@@ -21,7 +21,7 @@ module.exports = function () {
       .map((post) => {
         const date = new Date(post.taken_at);
         post.date = date;
-        post.formattedDate = format(date, "Mo MMMM Y");
+        post.formattedDate = format(date, "yyyy-MM-dd");
         return post;
       })
       // Check file exists to show.
