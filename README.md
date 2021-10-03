@@ -1,4 +1,4 @@
-# Instagram Archive Viewer
+# Pri✩stagram
 
 📸 Instagram archive @sakuramochi_mochi_
 
