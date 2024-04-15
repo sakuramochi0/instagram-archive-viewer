@@ -209,6 +209,18 @@ nav a:not([aria-current="page"]) {
   margin: 0;
 }
 
+.profile .website {
+  margin-top: 0.5rem;
+}
+
+.profile .website a {
+  color: var(--primary) !important;
+}
+
+.profile .website a::before {
+  content: "🌐 ";
+}
+
 #picture-box {
   display: flex;
   flex-direction: column;
